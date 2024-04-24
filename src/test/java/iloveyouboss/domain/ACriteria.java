@@ -6,7 +6,6 @@ import java.util.List;
 
 import static iloveyouboss.domain.questions.YesNoQuestion.No;
 import static iloveyouboss.domain.questions.YesNoQuestion.Yes;
-import static java.util.stream.Collectors.toList;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ACriteria {
@@ -40,6 +39,6 @@ class ACriteria {
    }
 
    private static List<Criterion> listOfCriterion(Criteria criteria) {
-      return criteria.stream().collect(toList());
+      return criteria.stream().toList();
    }
 }
